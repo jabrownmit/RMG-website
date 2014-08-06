@@ -2337,7 +2337,8 @@ def solvationSearch(request):
 def groupDraw(request):
     """
     Creates webpage form to display group chemgraph upon entering adjacency list.
-    """
+    """    
+    from forms import GroupDrawForm
     form = GroupDrawForm()
     structure_markup = ''
     group = Group()
